@@ -141,3 +141,7 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+/JavaAula04/nbproject/private/
+/JavaAula04/build/
+/JavaAula5/nbproject/private/
+/JavaAula5/build/
