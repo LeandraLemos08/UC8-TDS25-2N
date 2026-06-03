@@ -185,6 +185,9 @@ public class telaCadastro extends javax.swing.JFrame {
     
     private void btnEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarActionPerformed
         // TODO add your handling code here:
+         telaLogin telaLogin = new telaLogin();
+         setVisible(false);
+         telaLogin.setVisible(true);
     }//GEN-LAST:event_btnEntrarActionPerformed
 
     private void btnCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrarActionPerformed
@@ -202,9 +205,9 @@ public class telaCadastro extends javax.swing.JFrame {
          
          JOptionPane.showMessageDialog(this, "Usuario cadastrado com sucesso!", "Aviso do Sistema", JOptionPane.INFORMATION_MESSAGE);
          
-         telaLogin telaLogin = new telaLogin();
+         telaCadastro telaCadastro = new telaCadastro();
          setVisible(false);
-         telaLogin.setVisible(true);
+         telaCadastro.setVisible(true);
         
     }//GEN-LAST:event_btnCadastrarActionPerformed
 

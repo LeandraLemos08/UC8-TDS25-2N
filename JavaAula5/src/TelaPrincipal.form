@@ -9,23 +9,41 @@
             <Property name="text" type="java.lang.String" value="Cadastro"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1">
+            <MenuItem class="javax.swing.JMenuItem" name="itemCliente">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="2" name="C:\Users\LEANDRACRUZDELEMOS\Downloads\feedback-do-cliente (1).png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Cliente"/>
-              </Properties>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem2">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Produto"/>
+                <Property name="name" type="java.lang.String" value="itemCliente" noResource="true"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem2ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itemClienteActionPerformed"/>
               </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem3">
+            <MenuItem class="javax.swing.JMenuItem" name="itemProduto">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Servi&#xe7;o"/>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="2" name="C:\Users\LEANDRACRUZDELEMOS\Downloads\entregavel (1).png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Produto"/>
+                <Property name="name" type="java.lang.String" value="itemProduto" noResource="true"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itemProdutoActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="itemServi&#xe7;o">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="2" name="C:\Users\LEANDRACRUZDELEMOS\Downloads\cliente (2) (1).png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Servi&#xe7;o"/>
+                <Property name="name" type="java.lang.String" value="itemServico" noResource="true"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itemServi&#xe7;oActionPerformed"/>
+              </Events>
             </MenuItem>
           </SubComponents>
         </Menu>
@@ -34,33 +52,45 @@
             <Property name="text" type="java.lang.String" value="Consulta"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem4">
+            <MenuItem class="javax.swing.JMenuItem" name="itemClientes">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="2" name="C:\Users\LEANDRACRUZDELEMOS\Downloads\cliente (1).png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Clientes"/>
               </Properties>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem5">
+            <MenuItem class="javax.swing.JMenuItem" name="itemProdutos">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="2" name="C:\Users\LEANDRACRUZDELEMOS\Downloads\produtos (1).png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Produtos"/>
               </Properties>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem6">
+            <MenuItem class="javax.swing.JMenuItem" name="itemServi&#xe7;os">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="2" name="C:\Users\LEANDRACRUZDELEMOS\Downloads\servico (1).png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Servi&#xe7;os"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem6ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itemServi&#xe7;osActionPerformed"/>
               </Events>
             </MenuItem>
           </SubComponents>
         </Menu>
-        <Menu class="javax.swing.JMenu" name="jMenu3">
+        <Menu class="javax.swing.JMenu" name="itemNovoPedido">
           <Properties>
             <Property name="text" type="java.lang.String" value="Pedidos"/>
           </Properties>
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem7">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="2" name="C:\Users\LEANDRACRUZDELEMOS\Downloads\novo-produto (1).png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Novo Pedido"/>
               </Properties>
             </MenuItem>
@@ -71,21 +101,30 @@
             <Property name="text" type="java.lang.String" value="Rel&#xe1;torio"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem8">
+            <MenuItem class="javax.swing.JMenuItem" name="itemRelatorioCliente">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="2" name="C:\Users\LEANDRACRUZDELEMOS\Downloads\relatorio-de-negocios (2) (1).png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Cliente"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem8ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itemRelatorioClienteActionPerformed"/>
               </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem9">
+            <MenuItem class="javax.swing.JMenuItem" name="itemRelatorioOrdemdeServi&#xe7;o">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="2" name="C:\Users\LEANDRACRUZDELEMOS\Downloads\relatorio-de-negocios (2) (1).png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Servi&#xe7;o"/>
               </Properties>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem10">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="2" name="C:\Users\LEANDRACRUZDELEMOS\Downloads\relatorio-de-negocios (2) (1).png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Ordem de Servi&#xe7;o"/>
               </Properties>
             </MenuItem>
@@ -105,6 +144,43 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Ajuda"/>
           </Properties>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="itemJanelas">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Janelas"/>
+          </Properties>
+          <SubComponents>
+            <Menu class="javax.swing.JMenu" name="itemMinimizarTodas">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Minimizar todas"/>
+              </Properties>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="itemRestaurarTodas">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Restaurar todas"/>
+              </Properties>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="itemLadoALado">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Lado a lado verticalmente"/>
+              </Properties>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="itemEmCascata">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Em cascata"/>
+              </Properties>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="itemEmGrade">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Em grade"/>
+              </Properties>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="itemFecharTodas">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Fechar todas"/>
+              </Properties>
+            </Menu>
+          </SubComponents>
         </Menu>
       </SubComponents>
     </Menu>
@@ -182,8 +258,7 @@
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="desktopPrincipal" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="208" max="32767" attributes="0"/>
+                  <Component id="desktopPrincipal" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -194,11 +269,13 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="2" name="C:\Users\LEANDRACRUZDELEMOS\Downloads\Icones\Icones\32 x 32\cliente(1).png"/>
             </Property>
+            <Property name="toolTipText" type="java.lang.String" value="Acessar seu perfil como cliente"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
                 <BevelBorder/>
               </Border>
             </Property>
+            <Property name="name" type="java.lang.String" value="btnCliente" noResource="true"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnPedido">
@@ -206,11 +283,13 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="2" name="C:\Users\LEANDRACRUZDELEMOS\Downloads\Icones\Icones\32 x 32\pedido.png"/>
             </Property>
+            <Property name="toolTipText" type="java.lang.String" value="Fazer um novo pedido"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
                 <BevelBorder/>
               </Border>
             </Property>
+            <Property name="name" type="java.lang.String" value="btnPedidos" noResource="true"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnProduto">
@@ -218,11 +297,13 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="2" name="C:\Users\LEANDRACRUZDELEMOS\Downloads\Icones\Icones\32 x 32\compras.png"/>
             </Property>
+            <Property name="toolTipText" type="java.lang.String" value="Acompanhar um produto"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
                 <BevelBorder/>
               </Border>
             </Property>
+            <Property name="name" type="java.lang.String" value="btnProduto" noResource="true"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnProdutoActionPerformed"/>
@@ -233,11 +314,13 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="2" name="C:\Users\LEANDRACRUZDELEMOS\Downloads\setas-flechas (3) (1) (1) (1).png"/>
             </Property>
+            <Property name="toolTipText" type="java.lang.String" value="Sair do sistema"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
                 <BevelBorder/>
               </Border>
             </Property>
+            <Property name="name" type="java.lang.String" value="btnSair" noResource="true"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnsairActionPerformed"/>
@@ -253,7 +336,7 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="8" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="216" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>

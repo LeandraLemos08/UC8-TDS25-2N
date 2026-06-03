@@ -216,13 +216,15 @@ public class telaLogin extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarActionPerformed
+    private void btnCadastreActionPerformed(java.awt.event.ActionEvent evt) {                                          
         // TODO add your handling code here:
         
         telaCadastro telaCadastro = new telaCadastro();
         setVisible(false);
         telaCadastro.setVisible(true);
-        
+    }
+    
+    private void btnEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarActionPerformed
         String email = campoEmail.getText();
         String senha = new String(campoSenha.getPassword());
         

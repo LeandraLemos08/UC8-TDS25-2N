@@ -33,35 +33,48 @@ public class TelaPrincipal extends javax.swing.JFrame {
         desktopPrincipal = new javax.swing.JDesktopPane();
         menuPrincipal = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
-        jMenuItem3 = new javax.swing.JMenuItem();
+        itemCliente = new javax.swing.JMenuItem();
+        itemProduto = new javax.swing.JMenuItem();
+        itemServiço = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
-        jMenuItem4 = new javax.swing.JMenuItem();
-        jMenuItem5 = new javax.swing.JMenuItem();
-        jMenuItem6 = new javax.swing.JMenuItem();
-        jMenu3 = new javax.swing.JMenu();
+        itemClientes = new javax.swing.JMenuItem();
+        itemProdutos = new javax.swing.JMenuItem();
+        itemServiços = new javax.swing.JMenuItem();
+        itemNovoPedido = new javax.swing.JMenu();
         jMenuItem7 = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
-        jMenuItem8 = new javax.swing.JMenuItem();
-        jMenuItem9 = new javax.swing.JMenuItem();
+        itemRelatorioCliente = new javax.swing.JMenuItem();
+        itemRelatorioOrdemdeServiço = new javax.swing.JMenuItem();
         jMenuItem10 = new javax.swing.JMenuItem();
         jMenu5 = new javax.swing.JMenu();
         jMenu6 = new javax.swing.JMenu();
         jMenu7 = new javax.swing.JMenu();
+        itemJanelas = new javax.swing.JMenu();
+        itemMinimizarTodas = new javax.swing.JMenu();
+        itemRestaurarTodas = new javax.swing.JMenu();
+        itemLadoALado = new javax.swing.JMenu();
+        itemEmCascata = new javax.swing.JMenu();
+        itemEmGrade = new javax.swing.JMenu();
+        itemFecharTodas = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         btnPainel.setBackground(new java.awt.Color(102, 0, 102));
 
         btnCliente.setIcon(new javax.swing.ImageIcon("C:\\Users\\LEANDRACRUZDELEMOS\\Downloads\\Icones\\Icones\\32 x 32\\cliente(1).png")); // NOI18N
+        btnCliente.setToolTipText("Acessar seu perfil como cliente");
         btnCliente.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnCliente.setName("btnCliente"); // NOI18N
 
         btnPedido.setIcon(new javax.swing.ImageIcon("C:\\Users\\LEANDRACRUZDELEMOS\\Downloads\\Icones\\Icones\\32 x 32\\pedido.png")); // NOI18N
+        btnPedido.setToolTipText("Fazer um novo pedido");
         btnPedido.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnPedido.setName("btnPedidos"); // NOI18N
 
         btnProduto.setIcon(new javax.swing.ImageIcon("C:\\Users\\LEANDRACRUZDELEMOS\\Downloads\\Icones\\Icones\\32 x 32\\compras.png")); // NOI18N
+        btnProduto.setToolTipText("Acompanhar um produto");
         btnProduto.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnProduto.setName("btnProduto"); // NOI18N
         btnProduto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnProdutoActionPerformed(evt);
@@ -69,7 +82,9 @@ public class TelaPrincipal extends javax.swing.JFrame {
         });
 
         btnsair.setIcon(new javax.swing.ImageIcon("C:\\Users\\LEANDRACRUZDELEMOS\\Downloads\\setas-flechas (3) (1) (1) (1).png")); // NOI18N
+        btnsair.setToolTipText("Sair do sistema");
         btnsair.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnsair.setName("btnSair"); // NOI18N
         btnsair.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnsairActionPerformed(evt);
@@ -84,7 +99,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         );
         desktopPrincipalLayout.setVerticalGroup(
             desktopPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 8, Short.MAX_VALUE)
+            .addGap(0, 216, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout btnPainelLayout = new javax.swing.GroupLayout(btnPainel);
@@ -116,66 +131,88 @@ public class TelaPrincipal extends javax.swing.JFrame {
                             .addComponent(btnsair)
                             .addGap(8, 8, 8))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(desktopPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(208, Short.MAX_VALUE))
+                .addComponent(desktopPrincipal))
         );
 
         jMenu1.setText("Cadastro");
 
-        jMenuItem1.setText("Cliente");
-        jMenu1.add(jMenuItem1);
-
-        jMenuItem2.setText("Produto");
-        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+        itemCliente.setIcon(new javax.swing.ImageIcon("C:\\Users\\LEANDRACRUZDELEMOS\\Downloads\\feedback-do-cliente (1).png")); // NOI18N
+        itemCliente.setText("Cliente");
+        itemCliente.setName("itemCliente"); // NOI18N
+        itemCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem2ActionPerformed(evt);
+                itemClienteActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem2);
+        jMenu1.add(itemCliente);
 
-        jMenuItem3.setText("Serviço");
-        jMenu1.add(jMenuItem3);
+        itemProduto.setIcon(new javax.swing.ImageIcon("C:\\Users\\LEANDRACRUZDELEMOS\\Downloads\\entregavel (1).png")); // NOI18N
+        itemProduto.setText("Produto");
+        itemProduto.setName("itemProduto"); // NOI18N
+        itemProduto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                itemProdutoActionPerformed(evt);
+            }
+        });
+        jMenu1.add(itemProduto);
+
+        itemServiço.setIcon(new javax.swing.ImageIcon("C:\\Users\\LEANDRACRUZDELEMOS\\Downloads\\cliente (2) (1).png")); // NOI18N
+        itemServiço.setText("Serviço");
+        itemServiço.setName("itemServico"); // NOI18N
+        itemServiço.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                itemServiçoActionPerformed(evt);
+            }
+        });
+        jMenu1.add(itemServiço);
 
         menuPrincipal.add(jMenu1);
 
         jMenu2.setText("Consulta");
 
-        jMenuItem4.setText("Clientes");
-        jMenu2.add(jMenuItem4);
+        itemClientes.setIcon(new javax.swing.ImageIcon("C:\\Users\\LEANDRACRUZDELEMOS\\Downloads\\cliente (1).png")); // NOI18N
+        itemClientes.setText("Clientes");
+        jMenu2.add(itemClientes);
 
-        jMenuItem5.setText("Produtos");
-        jMenu2.add(jMenuItem5);
+        itemProdutos.setIcon(new javax.swing.ImageIcon("C:\\Users\\LEANDRACRUZDELEMOS\\Downloads\\produtos (1).png")); // NOI18N
+        itemProdutos.setText("Produtos");
+        jMenu2.add(itemProdutos);
 
-        jMenuItem6.setText("Serviços");
-        jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
+        itemServiços.setIcon(new javax.swing.ImageIcon("C:\\Users\\LEANDRACRUZDELEMOS\\Downloads\\servico (1).png")); // NOI18N
+        itemServiços.setText("Serviços");
+        itemServiços.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem6ActionPerformed(evt);
+                itemServiçosActionPerformed(evt);
             }
         });
-        jMenu2.add(jMenuItem6);
+        jMenu2.add(itemServiços);
 
         menuPrincipal.add(jMenu2);
 
-        jMenu3.setText("Pedidos");
+        itemNovoPedido.setText("Pedidos");
 
+        jMenuItem7.setIcon(new javax.swing.ImageIcon("C:\\Users\\LEANDRACRUZDELEMOS\\Downloads\\novo-produto (1).png")); // NOI18N
         jMenuItem7.setText("Novo Pedido");
-        jMenu3.add(jMenuItem7);
+        itemNovoPedido.add(jMenuItem7);
 
-        menuPrincipal.add(jMenu3);
+        menuPrincipal.add(itemNovoPedido);
 
         jMenu4.setText("Relátorio");
 
-        jMenuItem8.setText("Cliente");
-        jMenuItem8.addActionListener(new java.awt.event.ActionListener() {
+        itemRelatorioCliente.setIcon(new javax.swing.ImageIcon("C:\\Users\\LEANDRACRUZDELEMOS\\Downloads\\relatorio-de-negocios (2) (1).png")); // NOI18N
+        itemRelatorioCliente.setText("Cliente");
+        itemRelatorioCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem8ActionPerformed(evt);
+                itemRelatorioClienteActionPerformed(evt);
             }
         });
-        jMenu4.add(jMenuItem8);
+        jMenu4.add(itemRelatorioCliente);
 
-        jMenuItem9.setText("Serviço");
-        jMenu4.add(jMenuItem9);
+        itemRelatorioOrdemdeServiço.setIcon(new javax.swing.ImageIcon("C:\\Users\\LEANDRACRUZDELEMOS\\Downloads\\relatorio-de-negocios (2) (1).png")); // NOI18N
+        itemRelatorioOrdemdeServiço.setText("Serviço");
+        jMenu4.add(itemRelatorioOrdemdeServiço);
 
+        jMenuItem10.setIcon(new javax.swing.ImageIcon("C:\\Users\\LEANDRACRUZDELEMOS\\Downloads\\relatorio-de-negocios (2) (1).png")); // NOI18N
         jMenuItem10.setText("Ordem de Serviço");
         jMenu4.add(jMenuItem10);
 
@@ -189,6 +226,28 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jMenu7.setText("Ajuda");
         menuPrincipal.add(jMenu7);
+
+        itemJanelas.setText("Janelas");
+
+        itemMinimizarTodas.setText("Minimizar todas");
+        itemJanelas.add(itemMinimizarTodas);
+
+        itemRestaurarTodas.setText("Restaurar todas");
+        itemJanelas.add(itemRestaurarTodas);
+
+        itemLadoALado.setText("Lado a lado verticalmente");
+        itemJanelas.add(itemLadoALado);
+
+        itemEmCascata.setText("Em cascata");
+        itemJanelas.add(itemEmCascata);
+
+        itemEmGrade.setText("Em grade");
+        itemJanelas.add(itemEmGrade);
+
+        itemFecharTodas.setText("Fechar todas");
+        itemJanelas.add(itemFecharTodas);
+
+        menuPrincipal.add(itemJanelas);
 
         setJMenuBar(menuPrincipal);
 
@@ -214,18 +273,47 @@ public class TelaPrincipal extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnProdutoActionPerformed
 
-    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem2ActionPerformed
+    private void itemProdutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemProdutoActionPerformed
+       telaCadastroProduto tela = new telaCadastroProduto();
+       desktopPrincipal.add(tela);
+       tela.setVisible(true);
+    }//GEN-LAST:event_itemProdutoActionPerformed
 
-    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem6ActionPerformed
+    private void itemServiçosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemServiçosActionPerformed
+       telaConsultaServiços tela = new telaConsultaServiços();
+       desktopPrincipal.add(tela);
+       tela.setVisible(true);
+    }//GEN-LAST:event_itemServiçosActionPerformed
 
-    private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
+    private void itemRelatorioClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemRelatorioClienteActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem8ActionPerformed
+    }//GEN-LAST:event_itemRelatorioClienteActionPerformed
 
+    private void itemClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemClienteActionPerformed
+       telaCadastroCliente tela = new telaCadastroCliente();
+       desktopPrincipal.add(tela);
+       tela.setVisible(true);
+    }//GEN-LAST:event_itemClienteActionPerformed
+
+    private void itemServiçoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemServiçoActionPerformed
+       telaCadastroServiço tela = new telaCadastroServiço();
+       desktopPrincipal.add(tela);
+       tela.setVisible(true);
+    }//GEN-LAST:event_itemServiçoActionPerformed
+
+    private void itemClientesActionPerformed(java.awt.event.ActionEvent evt) {                                            
+       telaConsultaClientes tela = new telaConsultaClientes();
+       desktopPrincipal.add(tela);
+       tela.setVisible(true);
+    }    
+    
+    private void itemProdutosActionPerformed(java.awt.event.ActionEvent evt) {                                            
+       telaConsultaProdutos tela = new telaConsultaProdutos();
+       desktopPrincipal.add(tela);
+       tela.setVisible(true);
+    }    
+    
+    
     /**
      * @param args the command line arguments
      */
@@ -268,23 +356,30 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton btnProduto;
     private javax.swing.JButton btnsair;
     private javax.swing.JDesktopPane desktopPrincipal;
+    private javax.swing.JMenuItem itemCliente;
+    private javax.swing.JMenuItem itemClientes;
+    private javax.swing.JMenu itemEmCascata;
+    private javax.swing.JMenu itemEmGrade;
+    private javax.swing.JMenu itemFecharTodas;
+    private javax.swing.JMenu itemJanelas;
+    private javax.swing.JMenu itemLadoALado;
+    private javax.swing.JMenu itemMinimizarTodas;
+    private javax.swing.JMenu itemNovoPedido;
+    private javax.swing.JMenuItem itemProduto;
+    private javax.swing.JMenuItem itemProdutos;
+    private javax.swing.JMenuItem itemRelatorioCliente;
+    private javax.swing.JMenuItem itemRelatorioOrdemdeServiço;
+    private javax.swing.JMenu itemRestaurarTodas;
+    private javax.swing.JMenuItem itemServiço;
+    private javax.swing.JMenuItem itemServiços;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenu jMenu5;
     private javax.swing.JMenu jMenu6;
     private javax.swing.JMenu jMenu7;
-    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem10;
-    private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
-    private javax.swing.JMenuItem jMenuItem5;
-    private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JMenuItem jMenuItem7;
-    private javax.swing.JMenuItem jMenuItem8;
-    private javax.swing.JMenuItem jMenuItem9;
     private javax.swing.JMenuBar menuPrincipal;
     // End of variables declaration//GEN-END:variables
 }
