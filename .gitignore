@@ -147,3 +147,4 @@ vite.config.ts.timestamp-*
 /JavaAula5/build/
 /SistemaRestaurante/nbproject/private/
 /sistemaRestaurante/nbproject/private/
+/consultaProduto/target/
