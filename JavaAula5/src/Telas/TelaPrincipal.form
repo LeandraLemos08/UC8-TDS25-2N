@@ -11,9 +11,6 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="itemCliente">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\LEANDRACRUZDELEMOS\Downloads\feedback-do-cliente (1).png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Cliente"/>
                 <Property name="name" type="java.lang.String" value="itemCliente" noResource="true"/>
               </Properties>
@@ -23,9 +20,6 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="itemProduto">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\LEANDRACRUZDELEMOS\Downloads\entregavel (1).png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Produto"/>
                 <Property name="name" type="java.lang.String" value="itemProduto" noResource="true"/>
               </Properties>
@@ -35,9 +29,6 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="itemServi&#xe7;o">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\LEANDRACRUZDELEMOS\Downloads\cliente (2) (1).png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Servi&#xe7;o"/>
                 <Property name="name" type="java.lang.String" value="itemServico" noResource="true"/>
               </Properties>
@@ -54,25 +45,16 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="itemClientes">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\LEANDRACRUZDELEMOS\Downloads\cliente (1).png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Clientes"/>
               </Properties>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="itemProdutos">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\LEANDRACRUZDELEMOS\Downloads\produtos (1).png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Produtos"/>
               </Properties>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="itemServi&#xe7;os">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\LEANDRACRUZDELEMOS\Downloads\servico (1).png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Servi&#xe7;os"/>
               </Properties>
               <Events>
@@ -88,9 +70,6 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem7">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\LEANDRACRUZDELEMOS\Downloads\novo-produto (1).png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Novo Pedido"/>
               </Properties>
             </MenuItem>
@@ -103,9 +82,6 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="itemRelatorioCliente">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\LEANDRACRUZDELEMOS\Downloads\relatorio-de-negocios (2) (1).png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Cliente"/>
               </Properties>
               <Events>
@@ -114,17 +90,11 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="itemRelatorioOrdemdeServi&#xe7;o">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\LEANDRACRUZDELEMOS\Downloads\relatorio-de-negocios (2) (1).png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Servi&#xe7;o"/>
               </Properties>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem10">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\LEANDRACRUZDELEMOS\Downloads\relatorio-de-negocios (2) (1).png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Ordem de Servi&#xe7;o"/>
               </Properties>
             </MenuItem>
@@ -266,9 +236,6 @@
       <SubComponents>
         <Component class="javax.swing.JButton" name="btnCliente">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\LEANDRACRUZDELEMOS\Downloads\Icones\Icones\32 x 32\cliente(1).png"/>
-            </Property>
             <Property name="toolTipText" type="java.lang.String" value="Acessar seu perfil como cliente"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
@@ -280,9 +247,6 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnPedido">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\LEANDRACRUZDELEMOS\Downloads\Icones\Icones\32 x 32\pedido.png"/>
-            </Property>
             <Property name="toolTipText" type="java.lang.String" value="Fazer um novo pedido"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
@@ -294,9 +258,6 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnProduto">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\LEANDRACRUZDELEMOS\Downloads\Icones\Icones\32 x 32\compras.png"/>
-            </Property>
             <Property name="toolTipText" type="java.lang.String" value="Acompanhar um produto"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
@@ -311,9 +272,6 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnsair">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\LEANDRACRUZDELEMOS\Downloads\setas-flechas (3) (1) (1) (1).png"/>
-            </Property>
             <Property name="toolTipText" type="java.lang.String" value="Sair do sistema"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">

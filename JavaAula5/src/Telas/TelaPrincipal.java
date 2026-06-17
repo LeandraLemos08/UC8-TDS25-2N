@@ -1,3 +1,13 @@
+package Telas;
+
+
+import Telas.telaCadastroProduto;
+import Telas.telaCadastroServiço;
+import Telas.telaConsultaClientes;
+import Telas.telaConsultaServiços;
+import Telas.telaConsultaProdutos;
+import Telas.telaCadastroCliente;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -61,17 +71,14 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         btnPainel.setBackground(new java.awt.Color(102, 0, 102));
 
-        btnCliente.setIcon(new javax.swing.ImageIcon("C:\\Users\\LEANDRACRUZDELEMOS\\Downloads\\Icones\\Icones\\32 x 32\\cliente(1).png")); // NOI18N
         btnCliente.setToolTipText("Acessar seu perfil como cliente");
         btnCliente.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnCliente.setName("btnCliente"); // NOI18N
 
-        btnPedido.setIcon(new javax.swing.ImageIcon("C:\\Users\\LEANDRACRUZDELEMOS\\Downloads\\Icones\\Icones\\32 x 32\\pedido.png")); // NOI18N
         btnPedido.setToolTipText("Fazer um novo pedido");
         btnPedido.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnPedido.setName("btnPedidos"); // NOI18N
 
-        btnProduto.setIcon(new javax.swing.ImageIcon("C:\\Users\\LEANDRACRUZDELEMOS\\Downloads\\Icones\\Icones\\32 x 32\\compras.png")); // NOI18N
         btnProduto.setToolTipText("Acompanhar um produto");
         btnProduto.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnProduto.setName("btnProduto"); // NOI18N
@@ -81,7 +88,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btnsair.setIcon(new javax.swing.ImageIcon("C:\\Users\\LEANDRACRUZDELEMOS\\Downloads\\setas-flechas (3) (1) (1) (1).png")); // NOI18N
         btnsair.setToolTipText("Sair do sistema");
         btnsair.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnsair.setName("btnSair"); // NOI18N
@@ -136,7 +142,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jMenu1.setText("Cadastro");
 
-        itemCliente.setIcon(new javax.swing.ImageIcon("C:\\Users\\LEANDRACRUZDELEMOS\\Downloads\\feedback-do-cliente (1).png")); // NOI18N
         itemCliente.setText("Cliente");
         itemCliente.setName("itemCliente"); // NOI18N
         itemCliente.addActionListener(new java.awt.event.ActionListener() {
@@ -146,7 +151,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
         });
         jMenu1.add(itemCliente);
 
-        itemProduto.setIcon(new javax.swing.ImageIcon("C:\\Users\\LEANDRACRUZDELEMOS\\Downloads\\entregavel (1).png")); // NOI18N
         itemProduto.setText("Produto");
         itemProduto.setName("itemProduto"); // NOI18N
         itemProduto.addActionListener(new java.awt.event.ActionListener() {
@@ -156,7 +160,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
         });
         jMenu1.add(itemProduto);
 
-        itemServiço.setIcon(new javax.swing.ImageIcon("C:\\Users\\LEANDRACRUZDELEMOS\\Downloads\\cliente (2) (1).png")); // NOI18N
         itemServiço.setText("Serviço");
         itemServiço.setName("itemServico"); // NOI18N
         itemServiço.addActionListener(new java.awt.event.ActionListener() {
@@ -170,15 +173,12 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jMenu2.setText("Consulta");
 
-        itemClientes.setIcon(new javax.swing.ImageIcon("C:\\Users\\LEANDRACRUZDELEMOS\\Downloads\\cliente (1).png")); // NOI18N
         itemClientes.setText("Clientes");
         jMenu2.add(itemClientes);
 
-        itemProdutos.setIcon(new javax.swing.ImageIcon("C:\\Users\\LEANDRACRUZDELEMOS\\Downloads\\produtos (1).png")); // NOI18N
         itemProdutos.setText("Produtos");
         jMenu2.add(itemProdutos);
 
-        itemServiços.setIcon(new javax.swing.ImageIcon("C:\\Users\\LEANDRACRUZDELEMOS\\Downloads\\servico (1).png")); // NOI18N
         itemServiços.setText("Serviços");
         itemServiços.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -191,7 +191,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         itemNovoPedido.setText("Pedidos");
 
-        jMenuItem7.setIcon(new javax.swing.ImageIcon("C:\\Users\\LEANDRACRUZDELEMOS\\Downloads\\novo-produto (1).png")); // NOI18N
         jMenuItem7.setText("Novo Pedido");
         itemNovoPedido.add(jMenuItem7);
 
@@ -199,7 +198,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jMenu4.setText("Relátorio");
 
-        itemRelatorioCliente.setIcon(new javax.swing.ImageIcon("C:\\Users\\LEANDRACRUZDELEMOS\\Downloads\\relatorio-de-negocios (2) (1).png")); // NOI18N
         itemRelatorioCliente.setText("Cliente");
         itemRelatorioCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -208,11 +206,9 @@ public class TelaPrincipal extends javax.swing.JFrame {
         });
         jMenu4.add(itemRelatorioCliente);
 
-        itemRelatorioOrdemdeServiço.setIcon(new javax.swing.ImageIcon("C:\\Users\\LEANDRACRUZDELEMOS\\Downloads\\relatorio-de-negocios (2) (1).png")); // NOI18N
         itemRelatorioOrdemdeServiço.setText("Serviço");
         jMenu4.add(itemRelatorioOrdemdeServiço);
 
-        jMenuItem10.setIcon(new javax.swing.ImageIcon("C:\\Users\\LEANDRACRUZDELEMOS\\Downloads\\relatorio-de-negocios (2) (1).png")); // NOI18N
         jMenuItem10.setText("Ordem de Serviço");
         jMenu4.add(jMenuItem10);
 

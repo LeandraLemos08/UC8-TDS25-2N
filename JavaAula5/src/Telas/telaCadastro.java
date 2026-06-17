@@ -1,4 +1,8 @@
+package Telas;
 
+
+import Modelo.Usuario;
+import Banco.BancoUsuario;
 import javax.swing.JOptionPane;
 
 /*
@@ -44,10 +48,10 @@ public class telaCadastro extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
-        jPanel1.setBackground(new java.awt.Color(153, 0, 153));
+        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
 
         campoCadastrar.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        campoCadastrar.setForeground(new java.awt.Color(204, 0, 204));
+        campoCadastrar.setForeground(new java.awt.Color(255, 255, 255));
         campoCadastrar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         campoCadastrar.setText("Cadastro");
         campoCadastrar.setName("lCadastre"); // NOI18N
@@ -66,12 +70,12 @@ public class telaCadastro extends javax.swing.JFrame {
                 .addGap(21, 21, 21))
         );
 
-        jPanel2.setBackground(new java.awt.Color(153, 0, 153));
+        jPanel2.setBackground(new java.awt.Color(0, 0, 0));
         jPanel2.setForeground(new java.awt.Color(153, 0, 153));
 
-        campoNome.setBackground(new java.awt.Color(153, 0, 153));
+        campoNome.setBackground(new java.awt.Color(242, 242, 242));
         campoNome.setForeground(new java.awt.Color(204, 0, 204));
-        campoNome.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED), "Nome", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(204, 0, 204))); // NOI18N
+        campoNome.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED), "Nome"));
         campoNome.setName("btnNome"); // NOI18N
         campoNome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -79,9 +83,9 @@ public class telaCadastro extends javax.swing.JFrame {
             }
         });
 
-        campoEmail.setBackground(new java.awt.Color(153, 0, 153));
+        campoEmail.setBackground(new java.awt.Color(242, 242, 242));
         campoEmail.setForeground(new java.awt.Color(204, 0, 204));
-        campoEmail.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED), "E-mail", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(204, 0, 204))); // NOI18N
+        campoEmail.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED), "E-mail"));
         campoEmail.setName("btnEmail"); // NOI18N
         campoEmail.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -89,18 +93,17 @@ public class telaCadastro extends javax.swing.JFrame {
             }
         });
 
-        campoSenha.setBackground(new java.awt.Color(153, 0, 153));
-        campoSenha.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED), "Senha", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(204, 0, 204))); // NOI18N
+        campoSenha.setBackground(new java.awt.Color(242, 242, 242));
+        campoSenha.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED), "Senha"));
         campoSenha.setName("btnSenha"); // NOI18N
 
         campoCadastro.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        campoCadastro.setForeground(new java.awt.Color(204, 0, 204));
+        campoCadastro.setForeground(new java.awt.Color(255, 255, 255));
         campoCadastro.setText("Já tem um cadastro?");
         campoCadastro.setName("lEntre"); // NOI18N
 
-        btnEntrar.setBackground(new java.awt.Color(102, 0, 102));
+        btnEntrar.setBackground(new java.awt.Color(242, 242, 242));
         btnEntrar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnEntrar.setForeground(new java.awt.Color(204, 0, 204));
         btnEntrar.setText("Entrar");
         btnEntrar.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnEntrar.setName("btnEntrar"); // NOI18N
@@ -110,9 +113,8 @@ public class telaCadastro extends javax.swing.JFrame {
             }
         });
 
-        btnCadastrar.setBackground(new java.awt.Color(102, 0, 102));
+        btnCadastrar.setBackground(new java.awt.Color(242, 242, 242));
         btnCadastrar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnCadastrar.setForeground(new java.awt.Color(204, 0, 204));
         btnCadastrar.setText("Cadastrar");
         btnCadastrar.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnCadastrar.setName("btnCadastre"); // NOI18N
