@@ -1,6 +1,6 @@
-
+                    
 package telas;
-
+import telas.telaNovoAluno;
 
 public class Principal extends javax.swing.JFrame {
     
@@ -84,7 +84,8 @@ public class Principal extends javax.swing.JFrame {
         jMenuItem4.setText("Zoom");
         jMenu3.add(jMenuItem4);
 
-        jMenuItem5.setText("-----------");
+        jMenuItem5.setText("Separador");
+        jMenuItem5.addActionListener(this::jMenuItem5ActionPerformed);
         jMenu3.add(jMenuItem5);
 
         jMenuItem6.setText("Régua");
@@ -113,8 +114,8 @@ public class Principal extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(desktopPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(desktopPrincipal))
         );
 
         pack();
@@ -126,10 +127,15 @@ public class Principal extends javax.swing.JFrame {
 
     private void jmNovoAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmNovoAlunoActionPerformed
        
-        telaAluno tela = new telaAluno();
-        desktopPrincipal.add(tela);
+        telaNovoAluno tela = new telaNovoAluno();
         tela.setVisible(true);
+        desktopPrincipal.add(tela);
+                
     }//GEN-LAST:event_jmNovoAlunoActionPerformed
+
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     
     public static void main(String args[]) {

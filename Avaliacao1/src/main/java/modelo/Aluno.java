@@ -1,6 +1,5 @@
 
 package modelo;
-import telas.telaAluno;
 
 public class Aluno {
 

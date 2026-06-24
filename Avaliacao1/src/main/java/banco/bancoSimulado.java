@@ -1,7 +1,6 @@
 
 package banco;
 import java.util.ArrayList;
-import telas.telaAluno;
 import modelo.Aluno;
 
 public class bancoSimulado {
